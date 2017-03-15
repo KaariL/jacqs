@@ -3,6 +3,10 @@ $orange: #ed7d3a
 $blue: #4f839d
 $green: #8ec16e
 $darkgrey: #262626
+$lightgrey: #d6d6d6
+$grey: #919191
+
+$hand: 'Lakki Reddy', cursive
 
 //resets/normalized
 body
@@ -20,13 +24,40 @@ h2
   display: inline-block
   padding: 3px 7px
   color: $blue
-  border-left: 1px solid $orange
-  border-right: 1px solid $orange
+  text-align: center
+  font-family: $hand
+  font-size: .9rem
+  margin: 19px auto
+  &:before, &:after
+    content: ""
+    height: .6rem
+    width: 1px
+    display: inline-block
+    background-color: $orange
+    margin: 0 5px
+
+
+
+
 
 //navigation
 nav
 
 //gallery
 #gallery
+  margin: 0 auto
   display: flex
-  max-width: 600px
+  max-width: 800px
+  flex-flow: row
+  flex-wrap: wrap
+  a
+    margin: 25px
+    width: 240px
+    text-align: center
+    box-shadow: 1px 1px 4px 3px $grey
+    &:hover
+      box-shadow: 0px 0px 3px 2px $grey
+      transition: box-shadow .5s
+  img, video
+    margin-top: 25px
+    border: 1px solid $lightgrey
