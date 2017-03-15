@@ -42,10 +42,16 @@ h2
 
 //navigation
 nav
+  h2:hover
+    color: $orange
   svg
-    fill: $orange
-    margin: 0
+    fill: $blue
+    margin: 0 5px
     padding: 0
+    height: 1rem
+    width: 1rem
+    &:hover
+      fill: $orange
 //gallery
 #gallery
   margin: 0 auto
@@ -55,12 +61,12 @@ nav
   flex-wrap: wrap
   a
     margin: 25px
-    width: 195px
+    width: 180px
     text-align: center
     box-shadow: 1px 1px 5px 3px $grey
     &:hover
       box-shadow: 1px 1px 6px 2px $grey
 
   img, video
-    margin-top: 25px
+    margin-top: 15px
     border: 1px solid $lightgrey
