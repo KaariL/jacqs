@@ -15,10 +15,6 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-  <div class="" href="index.html"> <!--//includes header, logo(svg) and tagline!-->
-    <h1></h1>
-    <h3></h3>
-  </div>
 </head>
 <body>
 <!--SVG DEFIITIONS -->
@@ -40,8 +36,9 @@
     </symbol>
   </defs>
 </svg>
-
-    <nav> <!--The Nav! -->
+<div id="bakground"></div> <!--The Background pattern! -->
+<header>
+    <nav> <!--The Navigation! -->
       <a href="Bio.html" title=""><h2>Bio</h2></a>
       <a href="Quote.html" title=""><h2>Request a Quote</h2></a> <!--///this could be just a popup that happens with a form-->
       <a href="" class="icon" title="Email"><svg><use xlink:href="#email"></svg></a>
@@ -49,12 +46,21 @@
       <a href="" class="icon" title="Facebook"><svg><use xlink:href="#facebook"></svg></a>
       <a href="" class="icon" title="Twitter"><svg><use xlink:href="#twitter"></svg></a>
     </nav>
-
+  </header>
   <main>
-    <section><!--//The section with the copy-->
-      <div><img src="" alt="" title=""></div>
-      <div> <!--///the copy-->
-        <p></p>
+    <section id="intro"><!--//Intro Video  ((Should we do an embed from video site like youtube or vimeo?))-->
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <div> <!--///Intro Paragraph-->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis arcu eu mi dignissim ornare. Cras nec tellus eu urna euismod congue eu nec ipsum. Sed quis lacus feugiat, tincidunt massa non, iaculis metus. Sed viverra turpis nec ex dapibus posuere. Duis nec erat faucibus, consectetur enim sit amet, egestas libero. Maecenas arcu enim, fermentum in dolor sit amet, ornare pharetra dui. Donec ut nunc justo. Duis gravida, ligula eu viverra varius, justo neque scelerisque magna, ac hendrerit arcu lacus sed odio. In euismod sit amet urna vitae gravida. Ut egestas sodales commodo. Mauris at erat et nibh lacinia ornare.
+        </p>
+        <p>
+          Pellentesque sagittis nec ante at sagittis. Vivamus non fringilla mauris, a fermentum ipsum. Aliquam molestie ac neque eget tempor. Maecenas a turpis finibus, tincidunt sem vitae, vehicula dui. In a rhoncus neque. Praesent efficitur vitae neque in viverra. In hac habitasse platea dictumst. Nam sed ante at felis malesuada consectetur. Maecenas placerat tincidunt massa vitae cursus. Suspendisse eros lacus, dignissim ac tincidunt sit amet, egestas at felis. Vivamus lectus nulla, pulvinar luctus tortor nec, dignissim finibus justo. Vestibulum ac dolor in nulla pretium feugiat sit amet ut diam. Nam sit amet varius dui. Duis tincidunt libero est, ut suscipit orci consectetur in. Suspendisse volutpat porttitor consectetur.
+        </p>
       </div>
     </section>
 
